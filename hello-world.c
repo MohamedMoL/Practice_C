@@ -77,7 +77,7 @@
     }
     return 0;
 } */
-int main() {
+/* int main() {
     int x;
     printf("Ingresa la nota del alumno, del 0 al 100: ");
     scanf("%i", &x);
@@ -90,5 +90,57 @@ int main() {
     else {
         printf("Buen trabajo, has aprobado \n");
     }
+    return 0;
+} */
+/* int main() {
+    int x;
+    printf("Estas en un bosque muy grande, de repente encuentras 3 caminos, elige uno (escibe 1, 2 o 3): ");
+    scanf("%i", &x);
+    switch (x) {
+    case 1:
+        printf("El camino era demasiado largo, te mueres en el camino :(\n");
+        break;
+    case 2:
+        printf("Caminando un poco consigues salir del bosque :)\n");
+        break;
+    case 3:
+        printf("Habian unos bandidos en el camino que te roban y no consigas sobrevivir sin nada :(\n");
+        break;
+    }
+    return 0;
+} */
+//--------------------------------------------Practice of Loops-------------------------------------------------
+/* int main() {
+    int x = 0;
+    while(x < 5) {
+        printf("#\n");
+        x++;
+    }
+    return 0;
+} */
+/* int main() {
+    int x = 0;
+    int y = 1;
+    int lim;
+    printf("¿Cuantas numeros en sucesion de Fibonacci quieres? (Para una vuelta pon el numero de vueltas mas 2) ");
+    scanf("%i", &lim);
+    for(int i = 1; i <= lim; i++) {
+        if(x < y) {
+            printf("Numero %i: %i\n", i, y);
+            x += y;
+        }
+        else {
+            printf("Numero %i: %i\n", i, x);
+            y += x;
+        }
+    }
+    return 0;
+} */
+int main() {
+    int num = 1;
+    do{
+        printf("%i\n", num);
+        num++;
+    }while(num <= 100);
     return 0;
 }
