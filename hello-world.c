@@ -136,11 +136,73 @@
     }
     return 0;
 } */
-int main() {
+/* int main() {
     int num = 1;
     do{
         printf("%i\n", num);
         num++;
     }while(num <= 100);
+    return 0;
+} */
+/* int main() {
+    int intList[5];
+    int finalOp = 1;
+    for(int i = 1; i <= 5; i++) {
+        printf("Numero %i: ", i);
+        scanf("%i", &intList[i-1]);
+        finalOp *= intList[i-1];
+        if(i == 5) {
+            printf("El resultado es: %i\n", finalOp);
+        }
+    }
+    return 0;
+} */
+/* int main() {
+    int intList[3][4];
+    for(int row = 0; row <= 2; row++) {
+        int sum = 0;
+        for(int column = 0; column <= 3; column++) {
+            printf("Numero de la fila %i y columna %i: ", row, column);
+            scanf("%i", &intList[row][column]);
+            sum += intList[row][column];
+            if(column == 3) {
+            printf("Sumatoria de la fila %i: %i\n", row, sum);
+            }
+        }
+    }
+    return 0;
+} */
+/* int main() {
+    int size;
+    printf("Ingresa el largo del array: ");
+    scanf("%i", &size);
+    int intList[size];
+    int mostBigNum = 0;
+    for(int i = 0; i < size; i++){
+        printf("Valor (%i): ", i);
+        scanf("%i", &intList[i]);
+        if(mostBigNum < intList[i]) {
+            mostBigNum = intList[i];
+        }
+    }
+    printf("El numero mas grande de la lista es: %i\n", mostBigNum);
+    return 0;
+} */
+int main() {
+    float intList[5][6];
+    for(int row = 0; row < 5; row++) {
+        float sum = 0;
+        for(int column = 0; column <= 4; column++) {
+            printf("Valor(%i, %i): ", row, column);
+            scanf("%f", &intList[row][column]);
+            sum += intList[row][column];
+            printf("Sumatoria de la fila %i hasta la columna %i: %f\n", row, column, sum);
+            if(column == 4) {
+                intList[row][5] = sum / 5;
+                sum += intList[row][5];
+                printf("La media de la fila %i es: %f\n\n", row, sum/6);
+            }
+        }
+    }
     return 0;
 }
